@@ -1,0 +1,329 @@
+.course-content ul.hero {
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    list-style: none;
+    clear: both;
+}
+
+.course-content ul.hero li.section .left,
+.course-content ul.hero li.section .right {
+    width: 40px;
+    padding: 0 6px;
+}
+.course-content ul.hero li.section ul.section {
+    margin: 0;
+    padding: 0 5px;
+}
+.course-content div.hero .column .right + h2 {
+    margin-top: 2rem;
+}
+.course-content div.hero .column h3 + h5,
+.course-content div.hero .column p + h3 {
+    margin-top: 1rem;
+}
+
+.jsenabled .course-content ul.hero li.section .left,
+.jsenabled .course-content ul.hero li.section .right {
+    width: auto;
+}
+
+.course-content ul.hero li.section .left .section-handle img.icon {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.course-content ul.hero li.section .section_action_menu .textmenu,
+.course-content ul.hero li.section .section_action_menu .menu-action-text {
+    white-space: nowrap;
+}
+
+.hero .column {
+    border: 1px solid rgba(0,0,0,.125);
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,.17);
+    box-shadow: 0 0 7px rgba(0,0,0,.17);
+    height: 100%;
+    padding: 20px 20px 10px;
+}
+.hero > div > .col-md-6 + .col-md-6 {
+    margin-top: 1rem;
+}
+.hero .course-img {
+    position: relative;
+    border: none;
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .course-img .media {
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    z-index: 100;
+}
+
+/* Circular progress bar styling */
+.hero .course-img .media .progress-chart-container {
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.hero .course-img .media .progress-chart-container .no-progress {
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 10px solid #dee2e6;
+    position: relative;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.hero .course-img .media .progress-chart-container .no-progress .icon,
+.hero .course-img .media .progress-chart-container .no-progress .icon .smallicon {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-45%, -45%);
+    color: #c1c9d0;
+    height: 50px;
+    width: 50px;
+    font-size: 45px;
+}
+
+.hero .course-img .media .progress-title {
+    margin-top: 35px;
+    margin-bottom: auto;
+    margin-right: .5em;
+    padding: .2rem 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    background-color: rgba(255,255,255,.9);
+}
+
+.hero .course-img .media .progress-chart-container .progress-doughnut {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 10px solid #dee2e6;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 25px rgba(0,0,0,.5);
+    box-shadow: 0 0 25px rgba(0,0,0,.5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hero .course-img .media .progress-chart-container .progress-doughnut .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #373a3c;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.hero .course-img .media .progress-chart-container .progress-doughnut .progress-indicator {
+    position: absolute;
+    top: -18px;
+    left: -8px;
+    height: 96px;
+    width: 96px;
+}
+.hero .course-img .media .progress-chart-container .progress-doughnut .progress-indicator .circular-chart {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+.progress-chart-container .progress-doughnut .progress-indicator .circular-chart .progress-circle {
+    stroke: #1177d1;
+    fill: none;
+    stroke-width: 2.3;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+.hero .topic-jump + .topic-jump {
+    margin-top: 1rem;
+}
+.hero .topic-jump .topic-name {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.hero .topic-jump .topic-name-item {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 110%;
+    width: calc(100% - 60px);
+    padding-right: 1rem;
+    text-align: left;
+}
+.hero .topic-jump .topic-name-completion {
+    font-size: 80%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.75);
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    width: 60px;
+    color: #000000;
+}
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-top .mdl-right .btn-outline-primary,
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-bottom .mdl-right .btn-outline-primary,
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-top .mdl-left .btn-outline-primary,
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-bottom .mdl-left .btn-outline-primary {
+    font-weight: 600;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-top,
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-bottom {
+    padding: 1rem 0;
+    overflow: auto;
+    background-color: #efefef;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-top {
+    border-bottom: 1px solid #cccccc;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-top .mdl-right {
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-top .mdl-left {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-bottom {
+    border-top: 1px solid #cccccc;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-bottom .mdl-right {
+    margin-right: 1em;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.mdl-bottom .mdl-left {
+    margin-left: 1em;
+}
+
+#page-course-view-hero .course-content .single-section .section-navigation.navigationtitle {
+    padding: 1rem 1rem;
+}
+
+#page-course-view-hero #region-main .course-content .single-section h2.sectionname {
+    text-align: left;
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255,255,255,.9);
+    border-radius: 0 5px 5px 0;
+    margin-left: -1rem;
+    margin-right: 130px;
+}
+#page-course-view-hero #region-main .course-content .single-section .section-navigation-back {
+    display: block;
+    float: left;
+    padding: 0.2rem 1rem;
+    background-color: rgba(255,255,255,1.9);
+    border-radius: 0 5px 5px 0;
+    margin-left: -1rem;
+    margin-right: 130px;
+    font-size: 130%;
+    transition: all 0.2s;
+}
+#page-course-view-hero #region-main .course-content .single-section .section-navigation-back:hover,
+#page-course-view-hero #region-main .course-content .single-section .section-navigation-back:focus {
+    background-color: #fff;
+    padding-left: 1.2rem;
+}
+#page-course-view-hero #region-main .course-content .single-section .section-navigation-back a {
+    color: initial;
+}
+#page-course-view-hero #region-main .course-content .single-section .section-navigation-back a:hover {
+    text-decoration: none;
+}
+
+#page-course-view-hero .completion-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px -20px 0.5rem;
+    padding: 1rem 20px;
+    background-color: #efefef;
+}
+
+#page-course-view-hero .completion-stats a {
+    color: inherit;
+}
+
+#page-course-view-hero .completion-stats a .completion-stats-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-course-view-hero .completion-stats .completion-stats-item .completion-stats-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 90%;
+    line-height: 1rem;
+    width: 165px;
+}
+
+#page-course-view-hero .completion-stats .completion-stats-item .completion-stats-number {
+    font-size: 300%;
+    font-weight: 700;
+    padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero > div > .col-md-6 + .col-md-6 {
+        margin-top: 0;
+    }
+}
+@media (min-width: 992px) {
+    #page-course-view-hero .completion-stats {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: -20px -20px 0.5rem;
+        padding: 20px;
+        background-color: #efefef;
+    }
+    #page-course-view-hero .completion-stats .completion-stats-item {
+        width: 30%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page-course-view-hero .completion-stats .completion-stats-item .completion-stats-title {
+        width: 90px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 90%;
+        line-height: 1rem;
+    }
+    #page-course-view-hero .completion-stats .completion-stats-item .completion-stats-number {
+        font-size: 300%;
+        font-weight: 700;
+        padding-right: 0.5rem;
+        width: auto;
+    }
+}
