@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Two Column';
-$string['privacy:metadata'] = 'The two column format plugin does not store any personal data.';
+$string['pluginname'] = 'Hero';
+$string['privacy:metadata'] = 'The hero course format plugin does not store any personal data.';
 
 $string['areachart'] = 'Area Chart';
 $string['bell'] = 'Bell';
