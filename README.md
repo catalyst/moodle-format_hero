@@ -1,5 +1,4 @@
-[![Build Status](https://www.travis-ci.org/catalyst/moodle-format_hero.svg?branch=master)](https://www.travis-ci.org/catalyst/moodle-format_hero)
-
+[![main branch test](https://github.com/catalyst/moodle-format_hero/actions/workflows/ci.yml/badge.svg)](https://github.com/catalyst/moodle-format_hero/actions/workflows/ci.yml)
 # Two Column - Course Format
 
 A two column course format for Moodle.
