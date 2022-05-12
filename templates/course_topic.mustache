@@ -42,12 +42,11 @@
             <span class="mdl-right">{{{navlinknext}}}</span>
         </div>
         <ul class="hero">
-	            {{{sectionheader}}}
-	            {{{helpicon}}}
-	            {{{sectioncmlist}}}
-	            {{{sectioncmcontrol}}}
-	            </div>
-            </li>
+            {{{sectionheader}}}
+            {{#sectioncmlist}}
+                {{> core_courseformat/local/content/section/cmlist }}
+            {{/sectioncmlist}}
+            {{{sectioncmcontrol}}}
         </ul>
         <div class="section-navigation mdl-bottom">
             <span class="mdl-left">{{{navlinkprevious}}}</span>
