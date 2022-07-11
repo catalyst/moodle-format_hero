@@ -232,6 +232,13 @@ class format_hero extends core_courseformat\base {
             'checked' => get_string('tick', 'format_hero'),
         );
 
+        $headingformats = [
+                'contain' => get_string('contain', 'format_hero'),
+                'containleft' => get_string('containleft', 'format_hero'),
+                'cover' => get_string('cover', 'format_hero'),
+                'auto' => get_string('auto', 'format_hero'),
+        ];
+
         if ($courseformatoptions === false) {
             $courseconfig = get_config('moodlecourse');
             $courseformatoptions = array(
@@ -246,6 +253,10 @@ class format_hero extends core_courseformat\base {
                 'completiontracking' => array(
                     'default' => 1,
                     'type' => PARAM_INT,
+                ),
+                'headerimageformat' => array(
+                    'default' => get_string('contain', 'format_hero'),
+                    'type' => PARAM_ALPHAEXT,
                 ),
                 'detailsheading' => array(
                     'default' => get_string('detailsheading', 'format_hero'),
@@ -354,6 +365,13 @@ class format_hero extends core_courseformat\base {
                     'help_component' => 'format_hero',
                     'element_attributes' => array( get_string('completiontracking_label', 'format_hero'))
                 ),
+                'headerimageformat' => array(
+                    'label' => get_string('headerimageformat_label', 'format_hero'),
+                    'element_type' => 'select',
+                    'help' => 'headerimageformat',
+                    'help_component' => 'format_hero',
+                    'element_attributes' => array($headingformats),
+                    ),
                 'detailsheading' => array(
                     'label' => get_string('detailsheading_label', 'format_hero'),
                     'element_type' => 'text',

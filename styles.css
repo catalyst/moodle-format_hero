@@ -60,8 +60,28 @@
     border: none;
     height: 550px;
     width: 100%;
+}
+
+.hero .course-img-contain {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero .course-img-containleft {
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero .course-img-cover {
     background-position: center;
     background-size: cover;
+}
+
+.hero .course-img-auto {
+    background-position: center;
+    background-size: auto;
 }
 
 .hero .section-img {

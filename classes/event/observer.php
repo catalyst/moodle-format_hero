@@ -15,12 +15,32 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Legacy file to aviod exceptions when formats require it.
+ * Event observers used in format_hero.
  *
- * @deprecated since Moodle 4.0 MDL-72656
  * @package     format_hero
- * @copyright   2019 Matt Porritt <mattp@catalyst-au.net>
+ * @copyright   2022 Matt Porritt <mattp@catalyst-au.net>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+namespace format_hero\event;
+
+use core\event\course_updated;
+
 
 defined('MOODLE_INTERNAL') || die();
+
+/**
+ * Event observer for format_hero.
+ */
+class observer {
+    /**
+     * Triggered via course_updated event.
+     *
+     * @param \core\event\course_updated $event
+     */
+    public static function course_updated(course_updated $event) {
+        // Purge course image cache in case if course image has been updated.
+        \cache::make('format_hero', 'header_course_image')->delete($event->objectid);
+        return true;
+    }
+
+}
