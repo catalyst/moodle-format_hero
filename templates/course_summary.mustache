@@ -35,12 +35,13 @@
 
       <div class="col-md-6 col-sm-12">
         <div class="column-no-stretch">
-            <div class="course-img course-img-{{{headerimageformat}}}" style='background-image: url("{{{courseimage}}}");'>
+            <div class="course-img course-img-{{{headerimageformat}}}"
+                {{#courseimage}}style='background-image: url("{{{courseimage}}}"), linear-gradient({{{headerbackcolor}}}, {{{headerbackcolor}}});' {{/courseimage}}
+                {{^courseimage}}style='background-color: {{{headerbackcolor}}};'{{/courseimage}}
+            >
             <span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}}</span>
             {{> format_hero/progress_bar }}
-        </div>
-
-
+            </div>
         </div>
       </div>
 
