@@ -207,7 +207,7 @@ class content extends content_base {
             $templatecontext->resourcesheading = format_text($courseformatoptions['resourcesheading'], FORMAT_HTML);
         }
 
-        $templatecontext->headerimageformat = format_text($courseformatoptions['headerimageformat'], FORMAT_HTML)
+        $templatecontext->headerimageformat = format_text($courseformatoptions['headerimageformat'], FORMAT_HTML);
 
         if (!empty($courseformatoptions['sectionheading1'])) {
             $templatecontext->sectionheading1 = format_text($courseformatoptions['sectionheading1'], FORMAT_HTML);
