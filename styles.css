@@ -62,35 +62,37 @@
     width: 100%;
 }
 
-.hero .course-img-contain {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.hero .course-img-containleft {
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.hero .course-img-cover {
-    background-position: center;
-    background-size: cover;
-}
-
-.hero .course-img-auto {
-    background-position: center;
-    background-size: auto;
-}
-
 .hero .section-img {
     position: relative;
     border: none;
     height: 150px;
     width: 100%;
+}
+
+.hero .course-img-contain,
+.hero .section-img-contain {
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero .course-img-containleft,
+.hero .section-img-containleft {
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero .course-img-cover,
+.hero .section-img-cover {
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .course-img-auto,
+.hero .section-img-auto {
+    background-position: center;
+    background-size: auto;
 }
 
 .hero .section-img .media,
