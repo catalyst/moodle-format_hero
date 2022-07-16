@@ -1,146 +1,130 @@
 {{!
     This file is part of Moodle - http://moodle.org/
-
     Moodle is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
-
     Moodle is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
     You should have received a copy of the GNU General Public License
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template format_hero/course_summary
-
-    This template renders the course summary section.
-
+    @template format_hero/course_sumamry
+    This template renders the course sumamry section.
     Example context (json):
     {
-
     }
 }}
+
 <div class="hero">
     <div class="row row-flex">
-    <div class="hero-notification">
-       {{{nocompletioncriteria}}}
-    </div>
+        <div class="hero-notification">
+            {{{nocompletioncriteria}}}
+        </div>
     </div>
     <div class="row row-flex">
 
-      <div class="col-md-6 col-sm-12">
-        <div class="column-no-stretch">
-            <div class="course-img course-img-{{{headerimageformat}}}"
-                {{#courseimage}}style='background-image: url("{{{courseimage}}}"), linear-gradient({{{headerbackcolor}}}, {{{headerbackcolor}}});' {{/courseimage}}
-                {{^courseimage}}style='background-color: {{{headerbackcolor}}};'{{/courseimage}}
-            >
-            <span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}}</span>
-            {{> format_hero/progress_bar }}
-        </div>
-
-
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <div class="column">
-            {{#completioncounts}}
-                <div class="completion-stats">
-                    <div class="completion-stats-item">
-                        <div class="completion-stats-number text-primary">{{complete}}</div>
-                        <div class="completion-stats-title">
-                            <a href="{{{completionurl}}}">{{#str}}userscomplete, format_hero{{/str}}</a>
+        <div class="col-md-6 col-sm-12">
+            <div class="column-no-stretch">
+                {{#completioncounts}}
+                    <div class="completion-stats">
+                        <div class="completion-stats-item">
+                            <div class="completion-stats-number text-primary">{{complete}}</div>
+                            <div class="completion-stats-title">
+                                <a href="{{{completionurl}}}">{{#str}}userscomplete, format_hero{{/str}}</a>
+                            </div>
+                        </div>
+                        <div class="completion-stats-item">
+                            <div class="completion-stats-number text-primary">{{inprogress}}</div>
+                            <div class="completion-stats-title">
+                                <a href="{{{completionurl}}}">{{#str}}usersinprogress, format_hero{{/str}}</a>
+                            </div>
+                        </div>
+                        <div class="completion-stats-item">
+                            <div class="completion-stats-number text-primary">{{notstarted}}</div>
+                            <div class="completion-stats-title">
+                                <a href="{{{completionurl}}}">{{#str}}usersnotstarted, format_hero{{/str}}</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="completion-stats-item">
-                        <div class="completion-stats-number text-primary">{{inprogress}}</div>
-                        <div class="completion-stats-title">
-                            <a href="{{{completionurl}}}">{{#str}}usersinprogress, format_hero{{/str}}</a>
-                        </div>
-                    </div>
-                    <div class="completion-stats-item">
-                        <div class="completion-stats-number text-primary">{{notstarted}}</div>
-                        <div class="completion-stats-title">
-                            <a href="{{{completionurl}}}">{{#str}}usersnotstarted, format_hero{{/str}}</a>
-                        </div>
-                    </div>
+                {{/completioncounts}}
+                <div class="course-img course-img-{{{headerimageformat}}}"
+                    {{#courseimage}}style='background-image: url("{{{courseimage}}}"), linear-gradient({{{headerbackcolor}}}, {{{headerbackcolor}}});' {{/courseimage}}
+                    {{^courseimage}}style='background-color: {{{headerbackcolor}}};'{{/courseimage}}
+                >
+                    <span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}}</span>
+                    {{> format_hero/progress_bar }}
                 </div>
-            {{/completioncounts}}
-
-          <h3>{{detailsheading}}</h3>
-
-          {{#sectionheading1}}
-	          <h5>{{# pix }} i/{{{sectionicon1}}}, core {{/ pix }}{{sectionheading1}}</h5>
-	          {{{sectiontext1}}}
-          {{/sectionheading1}}
-
-          {{#sectionheading2}}
-              <h5>{{# pix }} i/{{{sectionicon2}}}, core {{/ pix }}{{sectionheading2}}</h5>
-              {{{sectiontext2}}}
-          {{/sectionheading2}}
-
-          {{#sectionheading3}}
-              <h5>{{# pix }} i/{{{sectionicon3}}}, core {{/ pix }}{{sectionheading3}}</h5>
-              {{{sectiontext3}}}
-          {{/sectionheading3}}
-
-          {{#sectionheading4}}
-              <h5>{{# pix }} i/{{{sectionicon4}}}, core {{/ pix }}{{sectionheading4}}</h5>
-              {{{sectiontext4}}}
-          {{/sectionheading4}}
-
-          {{#sectionheading5}}
-              <h5> {{# pix }} i/{{{sectionicon5}}}, core {{/ pix }}{{sectionheading5}}</h5>
-              {{{sectiontext5}}}
-          {{/sectionheading5}}
-
-          <h3>{{resourcesheading}}</h3>
-          <ul class="hero">
-           <li id="section-0" class="section main clearfix" role="region" aria-label="overview">
-                <span class="hidden sectionname">overview</span>
-                <div class = "content">
-                    {{#mods}}
-                        {{> core_courseformat/local/content/section/cmlist }}
-                    {{/mods}}
-                    {{{ modcontrol }}}
-                </div>
-            </li>
-          </ul>
-                  <div class="section">
-            <div class="right side">
-                {{#controlmenu}}
-                    {{> core_courseformat/local/content/section/controlmenu }}
-                {{/controlmenu}}
-            </div>
-            <h2>{{summaryname}}</h2>
-            <div class="summary">
-                {{#summary}}
-                    {{{summarytext}}}
-                {{/summary}}
             </div>
         </div>
-        <div class="sections">
-            {{#sections}}
-                <div class="topic-jump">
-                    <a href="{{{url}}}" class="btn btn-primary btn-block topic-name">
-                        <span class="topic-name-item">{{{name}}}</span>
-                        {{#completion}}
-                            {{#hastotal}}
-                                <span class="topic-name-completion" title="{{complete}} of {{total}} activities completed">
+
+        <div class="col-md-6 col-sm-12">
+            <div class="column">
+                <h3>{{detailsheading}}</h3>
+
+                {{#sectionheading1}}
+                    <h5>{{# pix }} i/{{{sectionicon1}}}, core {{/ pix }}{{sectionheading1}}</h5>
+                    {{{sectiontext1}}}
+                {{/sectionheading1}}
+
+                {{#sectionheading2}}
+                    <h5>{{# pix }} i/{{{sectionicon2}}}, core {{/ pix }}{{sectionheading2}}</h5>
+                    {{{sectiontext2}}}
+                {{/sectionheading2}}
+
+                {{#sectionheading3}}
+                    <h5>{{# pix }} i/{{{sectionicon3}}}, core {{/ pix }}{{sectionheading3}}</h5>
+                    {{{sectiontext3}}}
+                {{/sectionheading3}}
+
+                {{#sectionheading4}}
+                    <h5>{{# pix }} i/{{{sectionicon4}}}, core {{/ pix }}{{sectionheading4}}</h5>
+                    {{{sectiontext4}}}
+                {{/sectionheading4}}
+
+                {{#sectionheading5}}
+                    <h5> {{# pix }} i/{{{sectionicon5}}}, core {{/ pix }}{{sectionheading5}}</h5>
+                    {{{sectiontext5}}}
+                {{/sectionheading5}}
+
+                <h3>{{resourcesheading}}</h3>
+                <ul class="hero">
+                    <li id="section-0" class="section main clearfix" role="region" aria-label="overview">
+                        <span class="hidden sectionname">overview</span>
+                        <div class = "content">
+                            {{{ mods }}}
+                            {{{ modcontrol }}}
+                        </div>
+                    </li>
+                </ul>
+                <div class="section">
+                    <div class="right side">{{{rightcontent}}}</div>
+                    <h2>{{summaryname}}</h2>
+                    <div class="summary">
+                        {{{summary}}}
+                    </div>
+                </div>
+                <div class="sections">
+                    {{#sections}}
+                        <div class="topic-jump">
+                            <a href="{{{url}}}" class="btn btn-primary btn-block topic-name">
+                                <span class="topic-name-item">{{{name}}}</span>
+                                {{#completion}}
+                                    {{#hastotal}}
+                                        <span class="topic-name-completion" title="{{complete}} of {{total}} activities completed">
                                     {{complete}} / {{total}}
                                 </span>
-                            {{/hastotal}}
-                        {{/completion}}
-                    </a>
+                                    {{/hastotal}}
+                                {{/completion}}
+                            </a>
+                        </div>
+                    {{/sections}}
                 </div>
-            {{/sections}}
+            </div>
         </div>
-        </div>
-    </div>
 
-  </div>
+    </div>
 </div>
