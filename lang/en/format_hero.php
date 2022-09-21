@@ -47,6 +47,7 @@ $string['detailsheading_help'] = 'Choose the text for the heading that is shown 
 $string['detailsheading_label'] = 'Summary heading';
 $string['envelope'] = 'Envelope';
 $string['globe'] = 'Globe';
+$string['hero:viewcompletionstats'] = 'View completion status';
 $string['home'] = 'Course home';
 $string['home_tip'] = 'Back to Course Home';
 $string['hidefromothers'] = 'Hide topic';
@@ -124,4 +125,3 @@ $string['tick'] = 'Tick';
 $string['userscomplete'] = 'Students complete';
 $string['usersinprogress'] = 'Students in progress';
 $string['usersnotstarted'] = 'Students not started';
-
