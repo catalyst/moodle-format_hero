@@ -63,6 +63,7 @@ $string['headerimage_label'] = 'Heading image';
 $string['headerimageformat'] = 'Heading image format';
 $string['headerimageformat_help'] = 'There are three options for formatting the display of the header image:<br/><strong>Contain:</strong> Scales the image as large as possible without cropping or stretching the image.<br/><strong>Contain Left:</strong> Scales the image as large as possible without cropping or stretching the image. Left aligned.<br/><strong>Cover:</strong> Scales the image (while preserving its ratio) to the smallest possible size to fill, leaving no empty space. Image may be cropped. <br/><strong>Auto:</strong> Scales the background image in the corresponding direction such that its intrinsic proportions are maintained.';
 $string['headerimageformat_label'] = 'Heading image format';
+$string['hero:viewcompletionstats'] = 'View completion status';
 $string['home'] = 'Course home';
 $string['home_tip'] = 'Back to Course Home';
 $string['hidefromothers'] = 'Hide topic';
@@ -148,4 +149,3 @@ $string['tick'] = 'Tick';
 $string['userscomplete'] = 'Students complete';
 $string['usersinprogress'] = 'Students in progress';
 $string['usersnotstarted'] = 'Students not started';
-
