@@ -704,7 +704,7 @@ class format_hero extends format_base {
                         }
 
                         if (!empty($options[$record->name]['element']) && $options[$record->name]['element'] === 'editor') {
-                            $this->formatoptions[$sectionid][$record->name] = json_decode($value, true);
+                            $this->formatoptions[$sectionid][$record->name] = json_decode($value, true)['text'];
                         } else {
                             $this->formatoptions[$sectionid][$record->name] = $value;
                         }
