@@ -212,31 +212,31 @@ class content extends content_base {
         if (!empty($courseformatoptions['sectionheading1'])) {
             $templatecontext->sectionheading1 = format_text($courseformatoptions['sectionheading1'], FORMAT_HTML);
             $templatecontext->sectionicon1 = $courseformatoptions['sectionicon1'];
-            $templatecontext->sectiontext1 = format_text($courseformatoptions['sectiontext1']['text'], FORMAT_HTML);
+            $templatecontext->sectiontext1 = format_text($courseformatoptions['sectiontext1'], FORMAT_HTML);
         }
 
         if (!empty($courseformatoptions['sectionheading2'])) {
             $templatecontext->sectionheading2 = format_text($courseformatoptions['sectionheading2'], FORMAT_HTML);
             $templatecontext->sectionicon2 = $courseformatoptions['sectionicon2'];
-            $templatecontext->sectiontext2 = format_text($courseformatoptions['sectiontext2']['text'], FORMAT_HTML);
+            $templatecontext->sectiontext2 = format_text($courseformatoptions['sectiontext2'], FORMAT_HTML);
         }
 
         if (!empty($courseformatoptions['sectionheading3'])) {
             $templatecontext->sectionheading3 = format_text($courseformatoptions['sectionheading3'], FORMAT_HTML);
             $templatecontext->sectionicon3 = $courseformatoptions['sectionicon3'];
-            $templatecontext->sectiontext3 = format_text($courseformatoptions['sectiontext3']['text'], FORMAT_HTML);
+            $templatecontext->sectiontext3 = format_text($courseformatoptions['sectiontext3'], FORMAT_HTML);
         }
 
         if (!empty($courseformatoptions['sectionheading4'])) {
             $templatecontext->sectionheading4 = format_text($courseformatoptions['sectionheading4'], FORMAT_HTML);
             $templatecontext->sectionicon4 = $courseformatoptions['sectionicon4'];
-            $templatecontext->sectiontext4 = format_text($courseformatoptions['sectiontext4']['text'], FORMAT_HTML);
+            $templatecontext->sectiontext4 = format_text($courseformatoptions['sectiontext4'], FORMAT_HTML);
         }
 
         if (!empty($courseformatoptions['sectionheading5'])) {
             $templatecontext->sectionheading5 = format_text($courseformatoptions['sectionheading5'], FORMAT_HTML);
             $templatecontext->sectionicon5 = $courseformatoptions['sectionicon5'];
-            $templatecontext->sectiontext5 = format_text($courseformatoptions['sectiontext5']['text'], FORMAT_HTML);
+            $templatecontext->sectiontext5 = format_text($courseformatoptions['sectiontext5'], FORMAT_HTML);
         }
 
         if (has_capability('format/completionstats:view', context_course::instance($course->id))
