@@ -21,6 +21,7 @@ This plugin currently supports Moodle:
 |--------------------|-------------------|
 | Moodle 3.8 to 3.11 | MOODLE_38_STABLE  |
 | Moodle 4.0+        | MOODLE_400_STABLE |
+| Moodle 4.2+        | MOODLE_402_STABLE |
 
 ## Installation
 
@@ -28,7 +29,7 @@ This plugin currently supports Moodle:
    Moodle plugin directory, or you can use git to clone it into your source:
 
    ```sh
-   git clone git@github.com:catalyst/moodle-format_hero.git course/format_hero
+   git clone git@github.com:catalyst/moodle-format_hero.git course/format/hero
    ```
 
    Or install via the Moodle plugin directory:
@@ -92,7 +93,7 @@ https://www.catalyst-au.net/
 
 # Contributing and Support
 
-Issues, and pull requests using github are welcome and encouraged! 
+Issues, and pull requests using github are welcome and encouraged!
 
 https://github.com/catalyst/moodle-format_hero/issues
 
