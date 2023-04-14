@@ -60,7 +60,9 @@
                     <li id="section-0" class="section main clearfix" role="region" aria-label="overview">
                         <span class="hidden sectionname">overview</span>
                         <div class = "content">
-                            {{{ mods }}}
+                            {{#mods}}
+                                {{> core_courseformat/local/content/section/cmlist }}
+                            {{/mods}}
                             {{{ modcontrol }}}
                         </div>
                     </li>
@@ -69,7 +71,9 @@
                     <div class="right side">{{{rightcontent}}}</div>
                     <h2>{{summaryname}}</h2>
                     <div class="summary">
-                        {{{summary}}}
+                        {{#summary}}
+                            {{{summarytext}}}
+                        {{/summary}}
                     </div>
                 </div>
                 <div class="sections">
