@@ -429,10 +429,6 @@ class format_hero extends core_courseformat\base {
                     'element_type' => 'editor',
                     'help' => 'sectiontext1',
                     'help_component' => 'format_hero',
-                    'element_attributes' => array(
-                        'trusttext' => 0,
-                        'enable_filemanagement' => false
-                    )
                 ),
                 'sectionicon1' => array(
                     'label' => get_string('sectionicon1_label', 'format_hero'),
@@ -452,10 +448,6 @@ class format_hero extends core_courseformat\base {
                     'element_type' => 'editor',
                     'help' => 'sectiontext2',
                     'help_component' => 'format_hero',
-                    'element_attributes' => array(
-                        'trusttext' => 0,
-                        'enable_filemanagement' => false
-                    )
                 ),
                 'sectionicon2' => array(
                     'label' => get_string('sectionicon2_label', 'format_hero'),
@@ -475,10 +467,6 @@ class format_hero extends core_courseformat\base {
                     'element_type' => 'editor',
                     'help' => 'sectiontext3',
                     'help_component' => 'format_hero',
-                    'element_attributes' => array(
-                        'trusttext' => 0,
-                        'enable_filemanagement' => false
-                    )
                 ),
                 'sectionicon3' => array(
                     'label' => get_string('sectionicon3_label', 'format_hero'),
@@ -498,10 +486,6 @@ class format_hero extends core_courseformat\base {
                     'element_type' => 'editor',
                     'help' => 'sectiontext4',
                     'help_component' => 'format_hero',
-                    'element_attributes' => array(
-                        'trusttext' => 0,
-                        'enable_filemanagement' => false
-                    )
                 ),
                 'sectionicon4' => array(
                     'label' => get_string('sectionicon4_label', 'format_hero'),
@@ -521,10 +505,6 @@ class format_hero extends core_courseformat\base {
                     'element_type' => 'editor',
                     'help' => 'sectiontext5',
                     'help_component' => 'format_hero',
-                    'element_attributes' => array(
-                        'trusttext' => 0,
-                        'enable_filemanagement' => false
-                    )
                 ),
                 'sectionicon5' => array(
                     'label' => get_string('sectionicon5_label', 'format_hero'),
