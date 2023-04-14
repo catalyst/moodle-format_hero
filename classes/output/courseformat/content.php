@@ -239,7 +239,7 @@ class content extends content_base {
             $templatecontext->sectiontext5 = format_text($courseformatoptions['sectiontext5'], FORMAT_HTML);
         }
 
-        if (has_capability('format/completionstats:view', context_course::instance($course->id))
+        if (has_capability('format/hero:viewcompletionstats', context_course::instance($course->id))
             && !empty($courseformatoptions['completionstatus'])
             && $completioninfo->has_criteria()) {
             $templatecontext->completioncounts = $this->get_completion_counts($completioninfo, $course);
