@@ -323,7 +323,7 @@ class content extends content_base {
 
         if ($imagenum !== 0) {
             $imagenum--;
-            $templatecontext->sectionimage = $this->get_course_image_or_pattern($course, $object, $imagenum);
+            $templatecontext->sectionimage = $this->get_course_image_or_pattern($course, $output, $imagenum);
         }
 
         return $templatecontext;
