@@ -347,7 +347,7 @@ class content extends content_base {
     /**
      * Get section info for UI display.
      *
-     * @param renderer_base $output
+     * @param stdClass $course The course entry from DB
      * @return array $sections array of section names and ids.
      */
     private function get_section_info(stdClass $course): array {
