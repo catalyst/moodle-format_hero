@@ -837,6 +837,14 @@ class format_hero extends core_courseformat\base {
         return $this->get_format_options();
     }
 
+    /**
+     * Opt into the course index.
+     *
+     * @return bool
+     */
+    public function uses_course_index() {
+        return true;
+    }
 }
 
 /**
